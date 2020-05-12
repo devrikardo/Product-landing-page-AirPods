@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  background: black;
+}
+header {
+  display: flex;
+  justify-content: space-around;
+  height: 10vh;
+  align-items: center;
+  width: 60%;
+  margin: auto;
+  position: relative;
+}
+.head {
+  height: 10vh;
+  width: 100%;
+  background: rgba(75, 75, 75, 0.3);
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  border-bottom: 0.5px solid rgba(128, 128, 128, 0.623);
+}
+
+.logo {
+  display: flex;
+  flex: 2;
+}
+
+.nav-link {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+.nav-link li {
+  list-style: none;
+}
+.nav-link a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+.buy {
+  background-color: #2997ff;
+  padding: 5px 15px 5px 15px;
+  border-radius: 30px;
+}
+section {
+  display: flex;
+  height: 90vh;
+  width: 60%;
+  margin: auto;
+  position: relative;
+}
+.introduce {
+  display: flex;
+  align-items: center;
+  flex: 3;
+  position: relative;
+}
+.intro-head {
+  color: white;
+}
+
+.intro-head h1 {
+  font-size: 70px;
+  font-weight: 200;
+}
+
+.intro-head h4 {
+  font-size: 22px;
+  margin: 15px 0px 15px 0px;
+  color: rgb(209, 209, 209);
+  font-weight: 200;
+}
+.intro-head p {
+  font-size: 16px;
+  margin: 20px 0px 15px 0px;
+  color: gray;
+}
+.fa-lg {
+  margin: 10px 7px 30px 0px;
+}
+
+.intro-head h4 a {
+  text-decoration: none;
+  color: rgb(3, 3, 3);
+  background: #2997ff;
+  font-size: 15px;
+  padding: 15px 25px 15px 25px;
+  border-radius: 30px;
+  font-weight: 700;
+}
+.intro-head h4 a:hover {
+  text-decoration: underline;
+}
+.blackjack {
+  display: flex;
+  flex: 1;
+}
+.blackjack img {
+  transform: rotateY(180deg);
+  max-width: 450px;
+  height: auto;
+}
+.ul-none {
+  list-style: none;
+  display: flex;
+}
+.ul-none li a {
+  color: white;
+  text-decoration: none;
+}
+.buy-none {
+  background-color: #2997ff;
+  padding: 5px 15px 5px 15px;
+  border-radius: 30px;
+  display: none;
+}
+#angle {
+  display: none;
+}
+
+@media (max-width: 1125px) {
+  header {
+    display: flex;
+    justify-content: space-around;
+    height: 10vh;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    position: relative;
+  }
+  section {
+    display: flex;
+    height: 90vh;
+    width: 80%;
+    margin: auto;
+    position: relative;
+  }
+}
+@media (max-width: 960px) {
+  section {
+    position: relative;
+    display: flex;
+    height: 90vh;
+  }
+  .introduce {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .nav-link {
+    display: none;
+  }
+  .buy-none {
+    display: block;
+  }
+  #angle {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+  .intro-head {
+    margin-bottom: 20px;
+  }
+
+  .intro-head h1 {
+    font-size: 40px;
+    font-weight: 200;
+  }
+  .intro-head h4 {
+    font-size: 16px;
+    margin: 5px 0px 5px 0px;
+    color: rgb(209, 209, 209);
+    font-weight: 200;
+  }
+  .intro-head p {
+    font-size: 14px;
+    margin: 5px 0px 5px 0px;
+    color: gray;
+  }
+  .blackjack {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .blackjack img {
+    position: absolute;
+    bottom: 0;
+    height: 550px;
+  }
+  .intro-head h4 a {
+    background: #2997ff;
+    font-size: 12px;
+    padding: 12px 18px 12px 18px;
+    border-radius: 30px;
+    font-weight: 700;
+  }
+  .intro-head h4 a:hover {
+    text-decoration: underline;
+  }
+}
+@media (max-width: 740px) {
+  .blackjack img {
+    height: 540px;
+  }
+}
+@media (max-width: 500px) {
+  .blackjack img {
+    height: 480px;
+    width: auto;
+  }
+}
+@media (max-width: 360px) {
+  .blackjack img {
+    width: 360px;
+    height: auto;
+    left: 1px;
+    bottom: 14px;
+  }
+}
